@@ -1,0 +1,61 @@
+# CMake/Ninja generated files
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+.ninja_deps
+.ninja_log
+build.ninja
+
+# Build and packaging outputs
+bin/
+obj/
+libs/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.so
+*.o
+*.obj
+*.a
+*.gcda
+*.gcno
+*.profraw
+
+# CMake links the bundled FreeType archives from this source directory.
+# Keep these files even though other generated/static archives are ignored.
+!src/ImGui/misc/git_freetype/*/libfreetype.a
+
+# Android/NDK local metadata
+.cxx/
+externalNativeBuild/
+local.properties
+captures/
+
+# IDE and editor files
+.idea/
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and local temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
