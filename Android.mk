@@ -46,6 +46,7 @@ LOCAL_SRC_FILES += src/Android_touch/TouchHelperA.cpp
 LOCAL_SRC_FILES += src/Android_Graphics/GraphicsManager.cpp
 LOCAL_SRC_FILES += src/Android_Graphics/OpenGLGraphics.cpp
 LOCAL_SRC_FILES += src/Android_Graphics/VulkanGraphics.cpp
+LOCAL_SRC_FILES += src/Android_Graphics/vulkan_wrapper.cpp
 LOCAL_SRC_FILES += src/Android_my_imgui/AndroidImgui.cpp
 LOCAL_SRC_FILES += src/Android_my_imgui/my_imgui.cpp
 LOCAL_SRC_FILES += src/Android_my_imgui/my_imgui_impl_android.cpp
@@ -60,9 +61,10 @@ LOCAL_SRC_FILES += src/ImGui/backends/imgui_impl_vulkan.cpp
 LOCAL_SRC_FILES += src/ImGui/misc/freetype/imgui_freetype.cpp
 LOCAL_SRC_FILES += src/My_Utils/stb_image.cpp
 LOCAL_SRC_FILES += games/example/main.cpp
-LOCAL_SRC_FILES += games/example/draw.cpp
+LOCAL_SRC_FILES += games/example/ImGuiDrawModule.cpp
 LOCAL_SRC_FILES += games/texun/main.cpp
-LOCAL_SRC_FILES += games/texun/draw.cpp
+LOCAL_SRC_FILES += games/texun/ImGuiDrawModule.cpp
+
 LOCAL_SRC_FILES += $(FIND_SRC:$(LOCAL_PATH)/%=%)
 
 LOCAL_LDLIBS := -llog -landroid -lEGL -lGLESv3 -ldl -lm -latomic -lc
